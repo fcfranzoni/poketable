@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+## 🏷️ Sobre
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação Criando tabela utilizando PokeApi
 
-## Available Scripts
 
-In the project directory, you can run:
+## 📦 Como baixar e executar?
 
-### `npm start`
+**Antes de baixar e executar o projeto**, é necessário ter o **Node.js** já instalado e, em seguida, instalar as seguintes ferramentas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Git](https://git-scm.com/)
+- [Yarn](https://classic.yarnpkg.com/lang/en/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ⬇️ Baixando o projeto
 
-### `npm test`
+Abra o terminal do seu sistema operacional e execute os seguintes comandos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  # Clonar o repositório
+  git clone https://github.com/fcfranzoni/poketable.git
 
-### `npm run build`
+  # Instalar as dependências
+  npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🌐 Variáveis de ambiente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Na raíz do projeto você encontrará o arquivo `.env.development`. A partir dele, crie um outro arquivo chamado `.env` utilizando a mesma estutura.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Serão necessárias duas variáveis:
 
-### `npm run eject`
+```env
+  REACT_APP_ENVIRONMENT=(utilizar o ambiente de acordo com o desenvolvimento (development | production))
+  REACT_APP_POKE_API_URL= (Atualmente utilizando https://pokeapi.co/api/v2/pokemon/)
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para isso, acesse o site da [Poke API](https://pokeapi.co/api/v2/) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🏃 Executando
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Com tudo configurado, iremos iniciar a aplicação:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  # Executar o servidor
+  yarn start
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para executar os testes, execute:
 
-### Code Splitting
+```bash
+  # Rodar testes
+  yarn test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  # Rodar testes e gerar coverage report
+  yarn run test:coverage
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido com 💜 por Fábio Franzoni 
